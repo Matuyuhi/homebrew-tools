@@ -1,4 +1,4 @@
-class SixteenBitsAudioMcp < Formula
+class A16bitsAudioMcp < Formula
   desc "Game audio MCP server - generate BGM, SE, and jingles via Claude"
   homepage "https://github.com/Matuyuhi/16bits-gaudio-mcp"
   version "0.2.1"
