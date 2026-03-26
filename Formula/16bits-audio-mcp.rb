@@ -1,3 +1,6 @@
+# Homebrew expects class name derived from filename.
+# "16bits-audio-mcp" -> "16bitsAudioMcp" which is invalid Ruby.
+# Workaround: register the formula class under the expected name.
 class SixteenBitsAudioMcp < Formula
   desc "Game audio MCP server - generate BGM, SE, and jingles via Claude"
   homepage "https://github.com/Matuyuhi/16bits-gaudio-mcp"
