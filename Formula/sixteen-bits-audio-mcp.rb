@@ -4,26 +4,26 @@
 class SixteenBitsAudioMcp < Formula
   desc "Game audio MCP server - generate BGM, SE, and jingles via Claude"
   homepage "https://github.com/Matuyuhi/16bits-gaudio-mcp"
-  version "0.4.1"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Matuyuhi/16bits-gaudio-mcp/releases/download/v#{version}/16bits-audio-mcp-aarch64-apple-darwin.tar.gz"
-      sha256 "f82836d707bb8d367f602199b5fab61cc551a2d641652c9038460b8ca09e497c"
+      sha256 "6736c7eeeff1accb550b634a4f3249c8030d6aad156c0739ffc860879291f8b0"
     else
       url "https://github.com/Matuyuhi/16bits-gaudio-mcp/releases/download/v#{version}/16bits-audio-mcp-x86_64-apple-darwin.tar.gz"
-      sha256 "72a9bb90824fe1407c929e0ea47f94004c9d26f69f15421673e728485006c110"
+      sha256 "cc58238274fec39a875ee1b65006db61aabf8ea421c58e368c57c68b86fc282f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Matuyuhi/16bits-gaudio-mcp/releases/download/v#{version}/16bits-audio-mcp-aarch64-linux.tar.gz"
-      sha256 "291e7a43cc57cbfc2971109b01a21dbf8f63c8d0fca434883e84d9defef676e9"
+      sha256 "2a34256b3b35698ece0e6bd91554ce28e39d157c6507476b2668bdbbcd208247"
     else
       url "https://github.com/Matuyuhi/16bits-gaudio-mcp/releases/download/v#{version}/16bits-audio-mcp-x86_64-linux.tar.gz"
-      sha256 "0d405e840724cb0e5a55d1193d031be122fd35a58bcf5d14840ca914fa21f685"
+      sha256 "c210261d166e0a0c54bc3d2e2d1e48bea419ef6476053ebe071abdf3e6718cd8"
     end
   end
 
