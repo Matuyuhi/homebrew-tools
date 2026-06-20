@@ -10,7 +10,7 @@ class Hush < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Matuyuhi/hush/releases/download/v#{version}/hush-aarch64-apple-darwin.tar.gz"
-      sha256 "4b79ab7b010e2500d7e586e161f56a6f43d7286127ef777c6ea9c3772784030f"
+      sha256 "b1bf575ccf768e3a482ff2516822a049268d851982acb31e0e07102ae00ec45a"
     else
       url "https://github.com/Matuyuhi/hush/releases/download/v#{version}/hush-x86_64-apple-darwin.tar.gz"
       sha256 "93bfa444c91c0b80d9ed4e19fbca04b51b79d41014e39fc5615472ae90f34863"
@@ -20,10 +20,10 @@ class Hush < Formula
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Matuyuhi/hush/releases/download/v#{version}/hush-aarch64-linux.tar.gz"
-      sha256 "0d002e092a7a084509d28f62b284ac64e466e895be467510cd31be3a4c86e3a2"
+      sha256 "e05da72d8e1c2eef53f7a8c5ebfd9a4a5b5b8f1876d9761b93175844fe24b21c"
     else
       url "https://github.com/Matuyuhi/hush/releases/download/v#{version}/hush-x86_64-linux.tar.gz"
-      sha256 "41551b5550e3fb029ab8e88fa1f268c15241e97c3a5513cae60b1de3dec5a239"
+      sha256 "b5bf783fda137dee84dbd03388c38f1029c1c9423e0c2faf0cd3013b45469490"
     end
   end
 
