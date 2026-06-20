@@ -4,26 +4,26 @@
 class Hush < Formula
   desc "Compress dev-command output for LLMs; the filter physically cannot transmit it"
   homepage "https://github.com/Matuyuhi/hush"
-  version "0.2.3"
+  version "0.2.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Matuyuhi/hush/releases/download/v#{version}/hush-aarch64-apple-darwin.tar.gz"
-      sha256 "0e248682779adfcac58f8257fbb25addcc01c8c87bfb5800ec710801dd878fc2"
+      sha256 "bbe808dc2b85ecd4143c29dc77d572727c5e026229051230c8a1e525458885b4"
     else
       url "https://github.com/Matuyuhi/hush/releases/download/v#{version}/hush-x86_64-apple-darwin.tar.gz"
-      sha256 "b3d367663dfb0b5550da34ba026298a018b13c5126b6d0edb8720c2894a19107"
+      sha256 "f5c3bab60886873b4420ffd53cfe76410adf1fa27883cf18575dcb526a61e338"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Matuyuhi/hush/releases/download/v#{version}/hush-aarch64-linux.tar.gz"
-      sha256 "1a4474d633e3745544446db54cef08d9b330c01e345dcf276f315109bfc0449e"
+      sha256 "afd9788862c932128cfe56289ce40a035143dc8803fd04aef4c01ca69161449f"
     else
       url "https://github.com/Matuyuhi/hush/releases/download/v#{version}/hush-x86_64-linux.tar.gz"
-      sha256 "0fa6962bfb8c8c0edcda64c6e06cb7297a289cc387234abbb735bf2855b8319a"
+      sha256 "ca96d8aa91642f5ebe8fe0c74f78ed4e2190bee8f2b829c5b9a6356113bd6efc"
     end
   end
 
