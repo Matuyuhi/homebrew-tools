@@ -13,7 +13,7 @@ class Hush < Formula
       sha256 "b1bf575ccf768e3a482ff2516822a049268d851982acb31e0e07102ae00ec45a"
     else
       url "https://github.com/Matuyuhi/hush/releases/download/v#{version}/hush-x86_64-apple-darwin.tar.gz"
-      sha256 "93bfa444c91c0b80d9ed4e19fbca04b51b79d41014e39fc5615472ae90f34863"
+      sha256 "70738a51ce32ba4caa1dc28589cd40cf5d048214d0ba772de695e8a19a48f1ee"
     end
   end
 
