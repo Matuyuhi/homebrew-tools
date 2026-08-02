@@ -4,26 +4,26 @@
 class Fv < Formula
   desc "Read-only TUI code viewer with syntax highlighting and git status"
   homepage "https://github.com/Matuyuhi/fv"
-  version "2.0.2"
+  version "2.0.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Matuyuhi/fv/releases/download/v#{version}/fv-aarch64-apple-darwin.tar.gz"
-      sha256 "4d51b547f54a8cf79aa0adbe1d20ebeaa0206337954d1b09d2cbc5b78bd36dee"
+      sha256 "3edee44e6260c762638f05211e70bc0e415f5bb18fd7f80be7f4b29a99038556"
     else
       url "https://github.com/Matuyuhi/fv/releases/download/v#{version}/fv-x86_64-apple-darwin.tar.gz"
-      sha256 "df51175e87e59881f55bb31beae976a1b74ebf5a88bd4faed41d1fa23a8ef853"
+      sha256 "b9337a154c950fe159915a537c12847b9ab28f4eff75c0c76291e7397a48ef74"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Matuyuhi/fv/releases/download/v#{version}/fv-aarch64-linux.tar.gz"
-      sha256 "b363aad6ff8a438830bf8fff9d9149f4f88837e7352a16a6bd8fe942ca080dd8"
+      sha256 "b8bba5e701e4e6f774e19fbfb043069e20453b6bc60d1b85b54b703073844104"
     else
       url "https://github.com/Matuyuhi/fv/releases/download/v#{version}/fv-x86_64-linux.tar.gz"
-      sha256 "56c9e238a9e48264b3711e57a625841780b8a94e5c78a2ef7362a50ae947362b"
+      sha256 "ed74a06791d8dafea5dec325e79b5379d25237aeba679453ac85350a8f7a51cf"
     end
   end
 
