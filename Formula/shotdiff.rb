@@ -4,26 +4,26 @@
 class Shotdiff < Formula
   desc "Side-by-side screenshot diff: BEFORE | DIFF | AFTER, changes in pink"
   homepage "https://github.com/Matuyuhi/shotdiff"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Matuyuhi/shotdiff/releases/download/v#{version}/shotdiff-aarch64-apple-darwin.tar.gz"
-      sha256 "30ca4bb6f039c50db23dafc91ef6db0e84bcbe27d4390d1801c84c8369604479"
+      sha256 "ea991e4afad313b1b955138e4e1ad5611f25e7532e5dbbe7635cf36db6709c64"
     else
       url "https://github.com/Matuyuhi/shotdiff/releases/download/v#{version}/shotdiff-x86_64-apple-darwin.tar.gz"
-      sha256 "499e16407e83b641781c212f66b00385652555c946265f368c4a98d2f897151d"
+      sha256 "b6df83d83540a7ea77f75aaabed45f97873801b85bb37ad406a8d8d5c0f65a57"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Matuyuhi/shotdiff/releases/download/v#{version}/shotdiff-aarch64-linux.tar.gz"
-      sha256 "647649921eddd942e037a0215f9a035297cae6da156df2ed8f31aa75bc80ef33"
+      sha256 "ed058e1df1c34c1179006ee92dca82b60a1d9fa7a5f9daad2783b2a3866dc6dc"
     else
       url "https://github.com/Matuyuhi/shotdiff/releases/download/v#{version}/shotdiff-x86_64-linux.tar.gz"
-      sha256 "bde8d0808f9b82cf59665ef0a2abe0e7bbeb070adfbc6690cc670eaec3f07752"
+      sha256 "ac6a05eb571913229bf6a55a5855181174a81001b84780037c5835564fecf941"
     end
   end
 
