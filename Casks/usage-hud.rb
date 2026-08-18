@@ -2,8 +2,8 @@
 # Values are substituted and pushed by Matuyuhi/usage-hud (.github/workflows/release.yml) on each release.
 
 cask "usage-hud" do
-  version "0.2.0"
-  sha256 "472501b5e5664e13d0466ddeeebff143b60d398d8ade6f11482eadb8a4f538ad"
+  version "0.3.0"
+  sha256 "b587e85efe489b60cf13658f4e0b43d66a802d56c671bb07368b55c9fc5c6c06"
 
   url "https://github.com/Matuyuhi/usage-hud/releases/download/v#{version}/usage-hud.zip"
   name "Usage HUD"
