@@ -2,8 +2,8 @@
 # Values are substituted and pushed by Matuyuhi/usage-hud (.github/workflows/release.yml) on each release.
 
 cask "usage-hud" do
-  version "1.0.3"
-  sha256 "8644c1064439ebc1314856bbdbeb2c633e7bab498ad4c9819217c73b223e3f0f"
+  version "1.0.4"
+  sha256 "2c0c1f07b5d385fe8457038f5fdf9e9231ac7363f494ac8fb89e2aeb84c30e6e"
 
   url "https://github.com/Matuyuhi/usage-hud/releases/download/v#{version}/usage-hud.zip"
   name "Usage HUD"
@@ -15,9 +15,9 @@ cask "usage-hud" do
   app "usage-hud.app"
 
   # ad-hoc 署名のため、quarantine が付いたままだと Gatekeeper に「壊れている」と判定される
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/usage-hud.app"]
+  postflight_steps do
+    run "xattr",
+        args: ["-dr", "com.apple.quarantine", "{{appdir}}/usage-hud.app"]
   end
 
   uninstall quit: "com.matuyuhi.usage-hud"
